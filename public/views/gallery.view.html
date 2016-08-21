@@ -1,0 +1,16 @@
+<div ng-controller="GalleryCtrl">
+	<h1>Most Popular Photos</h1>
+	<div class="row gallery">
+		<div class="col-md-3" ng-repeat="img in images.hits">
+			<a href="#"><img ng-src="{{img.previewURL}}" class="main flower" alt=""></a>
+			<div class="imgInfo">
+				<img src="" alt="" class="avatar img-circle">Posted By:{{img.user}}
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
